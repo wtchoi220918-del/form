@@ -1,0 +1,61 @@
+
+<! DOCTYPE html>
+<html Lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Flexbox Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="page-title">VIP Registration</h1>
+    <p class="info-text">Please complete all required fields.</p>
+    <p class="info-text">Double check your email before submitting.</p>
+    <form action="#" method="POST" class="form-card">
+        <h2>Event Sign-up</h2>
+        <div class="form-group">
+            <label for="userEmail">Email Address:</label>
+            <input type="email" id="userEmail" name="userEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+            <label for="birthDate">Date of Birth:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+        </div>
+        <div class="form-group">
+            <label for="userNotes">Special Requests:</label>
+            <textarea id="userNotes" name="userNotes" rows="3" placeholder="Enter dietary or seating needs..."></textarea>
+        </div>
+        <div class="form-group">
+            <label>Ticket Tier:</label>
+            <div class="option-group">
+                <input type="radio" id="tierPass" name="ticket" value="standard">
+                <label for="tierPass">Standard</label>
+                <input type="radio" id="tierVIP" name="ticket" value="vip">
+                <label for="tierVIP">VIP Pass</label>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <label>Dietary Preferences:</label>
+            <div class="option-group">
+                <input type="checkbox" id="veg" name="diet" value="vegetarian">
+                <label for="veg">Vegetarian</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tshirt">T-Shirt Size:</label>
+            <select id="tshirt" name="tshirt">
+                <option value="" disabled selected>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+        <button type="submit" class="submit-btn">Submit Registration</button>
+    </form>
+</body>
+ </html>
